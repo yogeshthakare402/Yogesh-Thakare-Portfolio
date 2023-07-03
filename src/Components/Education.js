@@ -17,7 +17,7 @@ function Education() {
                 return res.json();
             })
             .then((result)=>{
-                console.log(result.education);
+                // console.log(result.education);
                 setEducation(result.education);
             });
     }

@@ -39,7 +39,7 @@ function Navigation() {
         <nav className="navbar navbar-expand-sm navBack">
             <div className="container-fluid">
                 <a className="navbar-brand" href="/">
-                    <BsGearWideConnected id='logo' className='translateLogo' />
+                    <BsGearWideConnected id='logo' className='translateLogo' style={{rotate:"0deg"}}/>
                 </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>

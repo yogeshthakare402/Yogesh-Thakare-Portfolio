@@ -33,8 +33,11 @@ function Home() {
 
     }
 
-    function handleScroll() {
+    function handleScroll() { 
         try {
+            let num = document.getElementById("logo").style.rotate.split("d")[0];
+            document.getElementById("logo").style.rotate = parseInt(num) + 1;
+            console.log(parseInt(num));
             const scrollTop = document.documentElement.scrollTop;
             const innerHeight = window.innerHeight;
             const scrollHeight = document.documentElement.scrollHeight;

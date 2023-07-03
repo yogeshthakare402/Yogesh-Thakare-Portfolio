@@ -42,8 +42,8 @@ function Work() {
                                 <img id='realestate' className='card-img-top projectImg' src={window.location.origin + data.img} alt={data.name} />
                                 <div className='card-body d-flex flex-column flex-wrap align-items-start justify-content-between detailCard rounded'>
                                     <h5 className="card-title">{data.name}</h5>
-                                    <p class="card-text text-wrap">{data.details}</p>
-                                    <a href={data.git} class="btn btn-outline-primary"><SiGithub /></a>
+                                    <p className="card-text text-wrap">{data.details}</p>
+                                    <a href={data.git} className="btn btn-outline-primary"><SiGithub /></a>
                                 </div>
                             </a>
                             

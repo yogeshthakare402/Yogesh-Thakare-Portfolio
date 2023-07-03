@@ -1,0 +1,614 @@
+#main {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Navigation CSS */
+#sectionZero{
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+.navBack {
+    background-image: url("https://media.istockphoto.com/photos/abstract-digital-flow-particles-cyber-network-connection-background-picture-id1338106050?b=1&k=20&m=1338106050&s=170667a&w=0&h=f1_caKDnJ0qfNCp3At477eDp8vD_EDyewXMKP9aaAgw=");
+    background-size: cover;
+}
+
+.navbar-toggler {
+    background-image: linear-gradient(50deg,
+            #8261f6 0%,
+            #c9a4f0 29%,
+            #ff1361 67%,
+            #fff800 100%);
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    color: white;
+}
+
+.translateLogo {
+    visibility: hidden;
+    animation: translateLogo 1.5s 0.3s linear;
+}
+
+.rotateLogo {
+    animation: rotateLogo infinite 5s linear;
+}
+
+@keyframes translateLogo {
+
+    0% {
+        visibility: visible;
+        transform: translate(700%);
+        color: red;
+    }
+
+    25% {
+        color: yellow;
+    }
+
+    50% {
+        color: rgb(82, 82, 248);
+    }
+
+    100% {
+        transform: translate(0%);
+        color: rgb(15, 227, 15);
+    }
+}
+
+@keyframes rotateLogo {
+    0% {
+        color: red;
+        transform: rotate(0deg);
+    }
+
+    25% {
+        color: yellow;
+    }
+
+    50% {
+        color: rgb(82, 82, 248);
+    }
+
+    100% {
+        color: rgb(15, 227, 15);
+        transform: rotate(360deg);
+    }
+}
+
+.one,
+.two,
+.three,
+.four,
+.five {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    ;
+    font-size: x-large;
+    font-weight: bold;
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+    color: white;
+    background-image: linear-gradient(50deg,
+            #8261f6 0%,
+            #c9a4f0 29%,
+            #ff1361 67%,
+            #fff800 100%);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    &:hover {
+        scale: 1.2;
+    }
+}
+
+.one {
+    animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.two {
+    animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.three {
+    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.four {
+    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.five {
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        visibility: visible;
+    }
+}
+
+/* Introduction Page */
+#intro {
+    background-image: url("https://www.birtikendrajituniversity.ac.in/landing_assets/images/btech_banner.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+#myImg {
+    width: 340px;
+    height: 440px;
+    object-fit: contain;
+    opacity: 0;
+    filter: blur(4px);
+    animation: translate 3s 0.3s forwards;
+    box-shadow: 0px 0px 10px 5px rgb(177, 109, 240);
+}
+
+@keyframes translate {
+    0% {
+        transform: translate(-300px);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        visibility: visible;
+        transform: translate(0px);
+    }
+}
+
+.details {
+    opacity: 0;
+    filter: blur(4px);
+    border-radius: 50px;
+    animation: translateInfo 3s 0.3s forwards;
+    background: none;
+}
+
+@keyframes translateInfo {
+    0% {
+        transform: translate(300px);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        visibility: visible;
+        transform: translate(0px);
+    }
+}
+
+.card-title-name {
+    background-image: linear-gradient(50deg,
+            #3d0cec 0%,
+            #7a10ec 29%,
+            #ff1361 67%,
+            #fff800 100%);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.para {
+    color: white;
+    font-size: x-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.position {
+    opacity: 0;
+    filter: blur(4px);
+    background-image: linear-gradient(50deg,
+            #3d0cec 0%,
+            #7a10ec 29%,
+            #ff1361 67%,
+            #fff800 100%);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fade-in-position 1s infinite alternate ease-in-out forwards;
+    font-weight: bold;
+}
+
+@keyframes fade-in-position {
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        visibility: visible;
+    }
+}
+
+/* Education Page */
+
+.cards{
+    background-color: #000000;
+    color: white;
+    opacity: 0;
+    filter: blur(4px);
+    scale: 0;
+    animation: educationAnime 1s 2s forwards ease-in;
+}
+#education{
+    height: 100vh;
+    background-color: #000000;
+}
+#experience{
+    height: 100vh;
+}
+
+.experience{
+    opacity: 0;
+    filter: blur(4px);
+    scale: 0;
+    animation: educationAnime 2s 2s forwards ease-in;
+}
+@keyframes educationAnime {
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        scale: 1;
+        visibility: visible;
+    }
+}
+
+/* Tools Page */
+#tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.skills {
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    top: -300px;
+    filter: blur(4px);
+
+    &:hover {
+        scale: 1.2;
+        cursor: pointer;
+    }
+}
+
+.skills-one {
+    animation: bubble 0.8s 0.3s forwards ease-in;
+}
+
+.skills-two {
+    animation: bubble 0.8s 0.5s forwards ease-in;
+}
+
+.skills-three {
+    animation: bubble 0.8s 0.7s forwards ease-in;
+}
+
+.skills-four {
+    animation: bubble 0.8s 0.9s forwards ease-in;
+}
+
+.skills-five {
+    animation: bubble 0.8s 0.9s forwards ease-in;
+}
+
+.skills-six {
+    animation: bubble 0.8s 0.7s forwards ease-in;
+}
+
+.skills-seven {
+    animation: bubble 0.8s 0.5s forwards ease-in;
+}
+
+.skills-eight {
+    animation: bubble 0.8s 0.3s forwards ease-in;
+}
+
+@keyframes bubble {
+    100% {
+        opacity: 1;
+        top: 0px;
+        filter: blur(0);
+        visibility: visible;
+    }
+}
+
+
+/* Work Page */
+
+.workPage {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgBox {
+    margin: 10px;
+    max-width: 50vw;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: none;
+}
+.projectImg{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.imgBox:hover {
+    box-shadow: 0px 0px 10px 1px #000000;
+}
+.detailCard{
+    background-color: #000000;
+}
+#animateWork{
+    width: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    animation: scaleWork 0.8s 0.3s forwards ease-in
+}
+
+@keyframes scaleWork {
+    100% {
+        width: 80%;
+    }
+}
+
+
+
+/* #animateWork div:nth-child(1) {
+    animation: scaleWork 0.8s 0.3s forwards ease-in
+}
+
+#animateWork div:nth-child(2) {
+    animation: scaleWork 0.8s 0.5s forwards ease-in
+}
+
+#animateWork div:nth-child(3) {
+    animation: scaleWork 0.8s 0.7s forwards ease-in
+}
+
+#animateWork div:nth-child(4) {
+    animation: scaleWork 0.8s 0.9s forwards ease-in
+}
+
+#animateWork div:nth-child(5) {
+    animation: scaleWork 0.8s 0.11s forwards ease-in
+}
+
+#animateWork div:nth-child(6) {
+    animation: scaleWork 0.8s 0.13s forwards ease-in
+}
+
+@keyframes scaleWork {
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        scale: 1;
+        visibility: visible;
+    }
+} */
+
+
+/* Contact Page */
+
+#contact {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headingBtn {
+    margin: 10%;
+    margin-bottom: 20px;
+}
+
+.waytoContact {
+    width: 90%;
+    margin-top: 50px;
+    box-sizing: content-box;
+}
+
+.call {
+    margin: 2.5%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}   
+.call:hover{
+    background-color: black;
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+
+#call2 {
+    visibility: hidden;
+}
+
+.icon {
+    font-size: xx-large;
+}
+
+.socialContact {
+    font-size: xx-large;
+}
+
+.social {
+    margin: 10px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    text-align: center;
+    border: 3px solid blue;
+}
+
+.headingBtn,
+.headingBtn2 {
+    visibility: hidden;
+    opacity: 0;
+    filter: blur(4px);
+}
+
+.headingBtn,
+.headingBtn2 {
+    animation: fade-in 1s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#call,
+#email,
+#socialOne,
+#socialtwo,
+#socialThree {
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    top: -300px;
+    filter: blur(4px);
+
+    &:hover {
+        fill: none;
+        cursor: pointer;
+    }
+}
+#socialOne:hover{
+    rotate: 30deg;
+    background-color: #000000;
+    border: 3px solid orangered;
+    & a{
+        color: orangered;
+    }
+}
+#socialtwo:hover{
+    rotate: 30deg;
+    background-color: #000000;
+    border: 3px solid orangered;
+    & a{
+        color: orangered;
+    }
+}
+#socialThree:hover{
+    rotate: 30deg;
+    background-color: #000000;
+    border: 3px solid orangered;
+    & a{
+        color: orangered;
+    }
+}
+
+#call {
+    animation: bubble 0.8s 1s forwards ease-in;
+}
+
+#email {
+    animation: bubble 0.8s 1.3s forwards ease-in;
+}
+
+#socialOne {
+    animation: bubble 0.8s 1.5s forwards ease-in;
+}
+
+#socialtwo {
+    animation: bubble 0.8s 1.7s forwards ease-in;
+}
+
+#socialThree {
+    animation: bubble 0.8s 1.9s forwards ease-in;
+}
+
+@media screen and (max-width:955px) {
+    #intro{
+        margin-top: 70px;
+    }
+    #myImg{
+        margin-top: 20px;
+    }
+    #contact {
+        padding-top: 30px;
+        justify-content: flex-start;
+    }
+    .headingBtn2{
+        margin-top: 50px;
+    }
+
+    .headingBtn {
+        margin: 10px;
+    }
+
+    #call2 {
+        display: none;
+    }
+
+    .changeScreen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .workPage{
+        flex-direction: column;
+    }
+    Marquee{
+        width: 80%;
+    }
+    #intro,#education,#experience{
+        height: fit-content;
+        padding-bottom: 50px;
+    }
+  
+}
+
+/* scroll css */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(69, 91, 118);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #1e1d1d;
+}

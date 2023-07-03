@@ -1,0 +1,85 @@
+{
+    "project":[
+        {
+            "id":1,
+            "name": "Real Estate App",
+            "link":"https://reale-estate-app.netlify.app/",
+            "img":"/projectImg/realestate.png",
+            "details":"Developed using React.Js, NodeJs, ExpressJs, MongoDB, CSS3"
+        },
+        {
+            "id":2,
+            "name": "Real Estate App 2",
+            "link":"https://real-estate-app-2.netlify.app/",
+            "img":"/projectImg/realestate2.png",
+            "details":"Developed using React.Js, NodeJs, ExpressJs, MongoDB, CSS3, Bootstrap."
+        },
+        {
+            "id":3,
+            "name": "Shopping Cart",
+            "link":"https://shopping-cart-yt.netlify.app/",
+            "img":"/projectImg/Shopping_Cart.png",
+            "details":"Frontend app using react js and useContext and useReducer hooks"
+        },
+        {
+            "id":4,
+            "name": "Recipe App",
+            "link":"https://recipeapp-yogesh.netlify.app/",
+            "img":"/projectImg/Recipe_App.png",
+            "details":"Developed using React.Js, NodeJs, ExpressJs, MongoDB, CSS3"
+        },
+        {
+            "id":5,
+            "name": "Image Gallery",
+            "link":"https://gallery-app-yogesh.netlify.app/",
+            "img":"/projectImg/Gallery_App.png",
+            "details":"Frontend app using Reactjs, CSS3"
+        },
+        {
+            "id":6,
+            "name": "Instaclone",
+            "link":"https://shopping-cart-yt.netlify.app/",
+            "img":"/projectImg/Instaclone.png",
+            "details":"Developed using React.Js, NodeJs, ExpressJs, MongoDB, CSS3."
+        }
+    ],
+    "education":[
+        {
+            "id":1,
+            "name":"Bachlore of Mechanical Engineering",
+            "college":"Sinhgad Institute Of Technology, Lonavala, Pune",
+            "grade":"CGPA- 8.56",
+            "year":"Jul 2016 - Aug 2019"
+        },
+        {
+            "id":2,
+            "name":"Diploma in Mechanical Engineering",
+            "college":"Government Polytechnic Washim",
+            "grade":"Percentage - 81.24%",
+            "year":"Jun 2014 - Jun 2016"
+        },
+        {
+            "id":3,
+            "name":"Electrical Science-HSC-12th",
+            "college":"Vidyabharati Junior College Karanja (Lad)",
+            "grade":"Percentage - 70.20%",
+            "year":"Jun 2012 - Jun 2014"
+        }
+    ],
+    "work":[
+        {
+            "id":1,
+            "name":"Full Stack Developer- Internship",
+            "company":"10X Academy",
+            "duration":"July 2022 - Dec 2022",
+            "detail":"Completed Full Stack Developer Course and learned skills like HTML, CSS, Javascript, React.js, Node.js, ExpressJS, MongoDB. Worked on various projects like Real Estate Project, Age Calculator, Instaclone App etc. during the internship period"
+        },
+        {
+            "id":1,
+            "name":"Technical Hiring - Consultant",
+            "company":"Stanley David and Associates",
+            "duration":"Aug 2021 - Present",
+            "detail":"Responsible for End to end recruitment cycle. Followed up with candidates for better joining ratios and successfully managed to enhance candidate experience Understanding the client requirements & source senior candidates from Job portals like Naukri, Linkedin, Monster India."
+        }
+    ]
+}

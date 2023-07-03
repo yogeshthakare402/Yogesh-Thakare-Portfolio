@@ -30,7 +30,7 @@ function Home() {
         }
 
         setNextComponent([...nextComponent, ...newItem])
-        
+
     }
 
     function handleScroll() {
@@ -52,14 +52,16 @@ function Home() {
     };
 
     useEffect(() => {
-
+        document.addEventListener("touchmove",handleScroll, { passive: true })
         document.addEventListener("scroll", handleScroll, { passive: true });
 
         return () => {
             document.removeEventListener("scroll", handleScroll);
+            document.removeEventListener("touchmove",handleScroll);
         };
         // eslint-disable-next-line
     }, [nextComponent]);
+    
 
     return (
         <div id='main' className='bg-dark'>

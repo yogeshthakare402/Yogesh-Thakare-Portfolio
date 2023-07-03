@@ -250,7 +250,6 @@ a {
 }
 #education{
     height: 100vh;
-    background-color: #000000;
 }
 #experience{
     height: 100vh;
@@ -260,7 +259,7 @@ a {
     opacity: 0;
     filter: blur(4px);
     scale: 0;
-    animation: educationAnime 2s 2s forwards ease-in;
+    animation: educationAnime 0.8s 2s forwards ease-in;
 }
 @keyframes educationAnime {
     100% {
@@ -382,40 +381,6 @@ a {
     }
 }
 
-
-
-/* #animateWork div:nth-child(1) {
-    animation: scaleWork 0.8s 0.3s forwards ease-in
-}
-
-#animateWork div:nth-child(2) {
-    animation: scaleWork 0.8s 0.5s forwards ease-in
-}
-
-#animateWork div:nth-child(3) {
-    animation: scaleWork 0.8s 0.7s forwards ease-in
-}
-
-#animateWork div:nth-child(4) {
-    animation: scaleWork 0.8s 0.9s forwards ease-in
-}
-
-#animateWork div:nth-child(5) {
-    animation: scaleWork 0.8s 0.11s forwards ease-in
-}
-
-#animateWork div:nth-child(6) {
-    animation: scaleWork 0.8s 0.13s forwards ease-in
-}
-
-@keyframes scaleWork {
-    100% {
-        opacity: 1;
-        filter: blur(0);
-        scale: 1;
-        visibility: visible;
-    }
-} */
 
 
 /* Contact Page */
@@ -554,6 +519,9 @@ a {
     }
     #myImg{
         margin-top: 20px;
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
     }
     #contact {
         padding-top: 30px;

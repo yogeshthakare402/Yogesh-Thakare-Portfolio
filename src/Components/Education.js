@@ -26,9 +26,9 @@ function Education() {
         getData()
     }, [])
     return (
-        <section id='education' className='container-fluid bg-dark' style={{ width: "100vw" }}>
+        <section id='education' className='container-fluid' style={{ width: "100vw", backgroundColor:"black" }}>
 
-            <div className='container bg-dark education pt-5'>
+            <div className='container education pt-5'>
                 <button type="button" className="btn btn-outline-primary btn-lg mt-5" disabled>
                     <h2>Education</h2>
                 </button>
@@ -37,7 +37,7 @@ function Education() {
                     return (
                         <div className="row pt-3" key={data.id}>
                             <div className="col-md-12">
-                                <div className='card cards'>
+                                <div className='card educationCards'>
                                     <div className='card-body'>
                                         <h3>{data.name}</h3>
                                         <h5>{data.college}</h5>

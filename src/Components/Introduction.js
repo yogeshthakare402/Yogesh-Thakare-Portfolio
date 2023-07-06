@@ -17,7 +17,7 @@ function Introduction() {
                     <div className="col-md-12">
                         <div className="card-body">
                             <h1 className="card-title card-title-name">Hello,<br /> my name is <span className='name'> Yogesh Thakare</span></h1>
-                            <p className="card-text para">I'm <span className='position'>MERN Stack Developer</span> with extensive experience for over 1 Years.
+                            <p className="card-text para">I'm <span className='designation'>MERN Stack Developer</span> with extensive experience for over 1 Years.
                                 My expertise is to create Frontend app and Backend api to make page responsive</p>
                         </div>
                     </div>

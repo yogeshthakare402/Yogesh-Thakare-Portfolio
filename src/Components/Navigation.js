@@ -12,8 +12,8 @@ import { BsGearWideConnected,BsDownload, BsFillPatchCheckFill} from 'react-icons
 function Navigation() {
     const [downloadBtn, setDownloadBtn] = useState(true);
 
-    let cvurl = 'https://yogesh-t-portfolio.netlify.app/Yogesh_Devidas_Thakare-V7-2023.pdf';
-    // let cvurl = 'http://localhost:3000/Yogesh_Devidas_Thakare-V7-2023.pdf';
+    // let cvurl = 'https://yogesh-t-portfolio.netlify.app/Yogesh_Devidas_Thakare-V7-2023.pdf';
+    let cvurl = 'http://localhost:3000/Yogesh_Devidas_Thakare-V7-2023.pdf';
     const filename = cvurl.split("/").pop();
 
     useEffect(() => {

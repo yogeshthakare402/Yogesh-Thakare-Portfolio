@@ -36,7 +36,7 @@ function Experience() {
                     return(
                         <div className="row pt-3" key={data.id}>
                             <div className="col-md-12">
-                                <div className='card cards'>
+                                <div className='card experienceCards'>
                                     <div className='card-body'>
                                         <h3>{data.name}</h3>
                                         <h5>{data.company}</h5>

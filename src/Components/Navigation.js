@@ -29,6 +29,9 @@ function Navigation() {
         }, 1500);
     }
 
+    // let element = document.getElementById('navbarSupportedContent');
+    // console.log(element.classList.value.indexOf('show'));
+
     return (
         <nav className="navbar navbar-expand-lg navBack" style={{width:"100vw"}}>
             <div className="container-fluid">

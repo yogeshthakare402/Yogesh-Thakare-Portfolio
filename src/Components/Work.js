@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import Marquee from 'react-fast-marquee';
-import {SiGithub } from 'react-icons/si';
+import { SiGithub } from 'react-icons/si';
+import { ImLink } from 'react-icons/im'
 
 
-function Work() {
+function Work({ fifthElementVisible }) {
     const [projects, setProjects] = useState([])
     // console.log(projects);
     const getData = () => {
@@ -29,28 +29,32 @@ function Work() {
         getData()
     }, [])
 
+    // behavior={"scroll"} direction={"right"} gradient={false} speed={100} pauseOnHover={true} 
+
+    // style={{width:"80%", zIndex:"0", borderLeft:"2px solid red", borderRight:"2px solid red", borderRadius:"50px"}}
+
     return (
-        <section id='work' className='container-fluid bg-dark workPage' style={{ width: "100vw", height: "100vh", paddingTop: "50px" }}>
+        <section id='work' className='container-fluid bg-dark workPage' style={{ width: "100vw" }}>
             <button type="button" className="btn btn-outline-info workBtn" disabled style={{ width: "300px", marginTop: "20px" }}>
                 <h1>My Last Projects are</h1>
             </button>
-            <Marquee behavior={"scroll"} direction={"right"} gradient={false} speed={100} pauseOnHover={true} id='animateWork' className='mt-3' style={{width:"80%", zIndex:"0", borderLeft:"2px solid red", borderRight:"2px solid red", borderRadius:"50px"}}>
+            <div id='WorkContainer' className='mt-3 d-flex flex-row flex-wrap align-items-center justify-content-between rounded'>
                 {projects && projects.map((data) => {
                     return (
-                        <div className="card text-bg-dark imgBox" style={{ width: "18rem",height:"25rem"}} key={data.id}>
-                            <a className="card-title d-flex flex-column justify-content-between rounded" href={data.link} target={"_blank"} rel="noreferrer" style={{height:"25rem" }}>
-                                <img id='realestate' className='card-img-top projectImg' src={window.location.origin + data.img} alt={data.name} />
-                                <div className='card-body d-flex flex-column flex-wrap align-items-start justify-content-between detailCard rounded'>
-                                    <h5 className="card-title">{data.name}</h5>
-                                    <p className="card-text text-wrap">{data.details}</p>
+                        <div className='card rounded-5 imgBox ' key={data.id}>
+                            <img className='card-img-top projectImg' src={window.location.origin + data.img} alt={data.name} />
+                            <div className='card-body detailCard rounded'>
+                                <h5 className="card-title">{data.name}</h5>
+                                <p className="card-text text-wrap">{data.details}</p>
+                                <div className='links'>
                                     <a href={data.git} className="btn btn-outline-primary"><SiGithub /></a>
+                                    <a href={data.link} target={"_blank"} rel="noreferrer" className="btn btn-outline-primary"><ImLink /></a>
                                 </div>
-                            </a>
-                            
+                            </div>
                         </div>
                     )
                 })}
-            </Marquee>
+            </div>
 
         </section>
     )

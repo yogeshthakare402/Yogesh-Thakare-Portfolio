@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Introduction() {
+function Introduction({firstElementVisible}) {
     return (
         <section id='intro' className='d-flex flex-wrap justify-content-center align-items-center mb-0' style={{ width: "100vw", gap: "20px" }}>
 

@@ -36,7 +36,7 @@ function Navigation() {
     }
 
     return (
-        <nav className="navbar navbar-expand-sm navBack">
+        <nav className="navbar navbar-expand-lg navBack" style={{width:"100vw"}}>
             <div className="container-fluid">
                 <a className="navbar-brand" href="/">
                     <BsGearWideConnected id='logo' className='translateLogo' style={{rotate:"0deg"}}/>
@@ -47,23 +47,23 @@ function Navigation() {
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0" id='navbarNav'>
-                        <li className="nav-item me-3" onClick={window.scrollTo(0, 0)}>
-                            <a className="nav-link one" aria-current="page" href="#intro">Home</a>
+                        <li className="nav-item me-3">
+                            <a className="nav-link one" aria-current="page" href="#introPage">Home</a>
                         </li>
                         <li className="nav-item me-3">
-                            <a className="nav-link two" aria-current="page" href="#education">Education</a>
+                            <a className="nav-link two" aria-current="page" href="#eduPage">Education</a>
                         </li>
                         <li className="nav-item me-3">
-                            <a className="nav-link two" aria-current="page" href="#experience">Experience</a>
+                            <a className="nav-link two" aria-current="page" href="#expPage">Experience</a>
                         </li>
                         <li className="nav-item me-3">
-                            <a className="nav-link three" aria-current="page" href="#tools">Tools</a>
+                            <a className="nav-link three" aria-current="page" href="#toolPage">Tools</a>
                         </li>
                         <li className="nav-item me-3">
-                            <a className="nav-link four" href="#work">Work</a>
+                            <a className="nav-link four" href="#worPage">Work</a>
                         </li>
                         <li className="nav-item me-3">
-                            <a className="nav-link five" href="#contact">Contact</a>
+                            <a className="nav-link five" href="#contPage">Contact</a>
                         </li>
                         <li className="nav-item me-3">
                             <a className="nav-link six" href={cvurl} download={filename}><button type='button' className='btn btn-primary' onClick={()=>changeDownloadBtn()}>Resume {downloadBtn?<BsDownload/>:<BsFillPatchCheckFill/>}</button></a>

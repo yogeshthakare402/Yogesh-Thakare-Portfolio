@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react';
 
-function Experience() {
+function Experience({thirdElementVisible}) {
     const [work, setwork] = useState([])
     // console.log(projects);
     const getData = () => {
@@ -28,7 +28,7 @@ function Experience() {
     return (
         <section id='experience' className='container-fluid bg-dark' style={{ width: "100vw"}}>
 
-            <div className='container experience pt-5'>
+            <div className='container experience pt-2'>
                 <button type="button" className="btn btn-outline-primary btn-lg mt-5" disabled>
                     <h2>Experience</h2>
                 </button>
@@ -36,7 +36,7 @@ function Experience() {
                     return(
                         <div className="row pt-3" key={data.id}>
                             <div className="col-md-12">
-                                <div className='card experienceCards'>
+                                <div className={thirdElementVisible ? "card experienceCards":"card"}>
                                     <div className='card-body'>
                                         <h3>{data.name}</h3>
                                         <h5>{data.company}</h5>

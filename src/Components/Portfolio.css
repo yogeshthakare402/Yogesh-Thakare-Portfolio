@@ -2,7 +2,7 @@
     width: 100vw;
     height: 100vh;
     background-color: black;
-    position: absolute;
+    position: relative;
 }
 
 a {
@@ -24,8 +24,14 @@ a {
 }
 
 .navbar-toggler {
-    background-color: black;
+    border-color: lightgreen;
 }
+/* Setting the stroke to green using rgb values (0, 128, 0) got from google*/
+.navbar-toggler-icon {
+    background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 128, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 
 #logo {
     width: 50px;
@@ -271,6 +277,7 @@ a {
 }
 
 #experience {
+    background-color: grey;
     height: fit-content;
     padding-bottom: 50px;
 }
@@ -371,15 +378,16 @@ a {
     align-items: center;
     justify-content: center;
 }
-/* #WorkContainer {
+#WorkContainer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-} */
+}
 
 .imgBox {
+    opacity: 0;
     max-width: 300px;
     height: 400px;
     margin: 10px;
@@ -389,7 +397,20 @@ a {
     align-items: center;
     border: none;
     box-sizing: border-box;
-    animation: scaleWork 0.8s 0.3s forwards ease-in;
+    animation: rotateWork 1s 0.3s forwards ease-in;
+}
+@keyframes rotateWork {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        rotate: 10deg;
+        opacity: 0.5;
+    }
+    100% {
+        rotate: 0deg;
+        opacity: 1;
+    }
 }
 
 .projectImg {
@@ -420,11 +441,7 @@ a {
     justify-content: space-between;
 }
 
-@keyframes scaleWork {
-    100% {
-        width: 80%;
-    }
-}
+
 
 
 
@@ -570,11 +587,12 @@ a {
 
 @media screen and (max-width:955px) {
     #intro {
+        padding-top: 50px;
         height: fit-content;
     }
 
     #myImg {
-        margin-top: 20px;
+        margin-top: 50px;
         width: 200px;
         height: 300px;
         object-fit: cover;

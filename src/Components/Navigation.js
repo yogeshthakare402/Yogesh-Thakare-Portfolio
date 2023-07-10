@@ -1,19 +1,13 @@
 import React, { useEffect, useState } from 'react';
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { BsGearWideConnected,BsDownload, BsFillPatchCheckFill} from 'react-icons/bs';
-// import Introduction from './Introduction';
-// import Education from './Education';
-// import Experience from './Experience';
-// import Tools from './Tools';
-// import Work from './Work';
-// import Contact from './Contact';
+
 
 
 function Navigation() {
     const [downloadBtn, setDownloadBtn] = useState(true);
 
-    // let cvurl = 'https://yogesh-t-portfolio.netlify.app/Yogesh_Devidas_Thakare-V7-2023.pdf';
-    let cvurl = 'http://localhost:3000/Yogesh_Devidas_Thakare-V7-2023.pdf';
+    // let cvurl = 'https://yogesh-t-portfolio.netlify.app/Yogesh_Thakare_Resume.pdf';
+    let cvurl = 'http://localhost:3000/Yogesh_Thakare_Resume.pdf';
     const filename = cvurl.split("/").pop();
 
     useEffect(() => {
@@ -41,8 +35,8 @@ function Navigation() {
                 <a className="navbar-brand" href="/">
                     <BsGearWideConnected id='logo' className='translateLogo' style={{rotate:"0deg"}}/>
                 </a>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                <button className="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon" style={{color:"white"}}></span>
                 </button>
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">

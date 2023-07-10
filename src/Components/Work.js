@@ -29,19 +29,15 @@ function Work({ fifthElementVisible }) {
         getData()
     }, [])
 
-    // behavior={"scroll"} direction={"right"} gradient={false} speed={100} pauseOnHover={true} 
-
-    // style={{width:"80%", zIndex:"0", borderLeft:"2px solid red", borderRight:"2px solid red", borderRadius:"50px"}}
-
     return (
-        <section id='work' className='container-fluid bg-dark workPage' style={{ width: "100vw" }}>
+        <section id='work' className='container-fluid bg-dark' style={{ width: "100vw" }}>
             <button type="button" className="btn btn-outline-info workBtn" disabled style={{ width: "300px", marginTop: "20px" }}>
                 <h1>My Last Projects are</h1>
             </button>
-            <div id='WorkContainer' className='mt-3 d-flex flex-row flex-wrap align-items-center justify-content-between rounded'>
+            <div id='WorkContainer' className='mt-3 rounded'>
                 {projects && projects.map((data) => {
                     return (
-                        <div className='card rounded-5 imgBox ' key={data.id}>
+                        <div className={fifthElementVisible?'card rounded-5 imgBox':''} key={data.id}>
                             <img className='card-img-top projectImg' src={window.location.origin + data.img} alt={data.name} />
                             <div className='card-body detailCard rounded'>
                                 <h5 className="card-title">{data.name}</h5>

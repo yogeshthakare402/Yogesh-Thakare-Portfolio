@@ -208,7 +208,7 @@ a {
     }
 }
 
-.card-title-name {
+.headTitle {
     background-image: linear-gradient(50deg,
             #3d0cec 0%,
             #7a10ec 29%,
@@ -247,7 +247,6 @@ a {
     100% {
         opacity: 1;
         filter: blur(0);
-        visibility: visible;
     }
 }
 

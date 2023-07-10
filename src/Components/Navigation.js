@@ -6,8 +6,8 @@ import { BsGearWideConnected,BsDownload, BsFillPatchCheckFill} from 'react-icons
 function Navigation() {
     const [downloadBtn, setDownloadBtn] = useState(true);
 
-    // let cvurl = 'https://yogesh-t-portfolio.netlify.app/Yogesh_Thakare_Resume.pdf';
-    let cvurl = 'http://localhost:3000/Yogesh_Thakare_Resume.pdf';
+    let cvurl = 'https://yogesh-t-portfolio.netlify.app/Yogesh_Thakare_Resume.pdf';
+    // let cvurl = 'http://localhost:3000/Yogesh_Thakare_Resume.pdf';
     const filename = cvurl.split("/").pop();
 
     useEffect(() => {

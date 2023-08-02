@@ -37,6 +37,13 @@
         },
         {
             "id":6,
+            "name": "Chat App",
+            "link":"https://chat-application-yt.netlify.app/",
+            "img":"/projectImg/Chat_App.png",
+            "details":"Developed using React.Js, Firebase- App, Auth, firestore, CSS3."
+        },
+        {
+            "id":7,
             "name": "Instaclone",
             "link":"https://shopping-cart-yt.netlify.app/",
             "img":"/projectImg/Instaclone.png",
